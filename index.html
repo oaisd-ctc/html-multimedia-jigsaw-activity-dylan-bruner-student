@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle = "#0066A0";
+            ctx.fillRect(0, 0, 150, 75);
+        })
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center; width: 100%; font-weight: 450;">HTML Multimedia Demonstration</h1>
+
+    <h3>Video Element</h3>
+    <div class="container">
+        <video src="/assets/Raindrops_Videvo.mp4" controls></video>
+    </div>
+    
+    <h3>Audio Element</h3>
+    <div class="container">
+        <audio src="assets/mixaund-feel.mp3" controls></audio>
+    </div>
+
+    <h3>Inline Frame Element</h3>
+    <div class="container">
+        <iframe src="https://www.example.com"></iframe>
+    </div>
+
+    <h3>Canvas Element</h3>
+    <div class="container" style="border: none">
+        <canvas id="myCanvas"></canvas>
+    </div>
+</body>
+</html>
